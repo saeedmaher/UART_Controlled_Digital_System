@@ -1,0 +1,42 @@
+# Single blocks
+../rtl/ALU.v
+../rtl/CLK_gate.v
+../rtl/Integer_CLK_DIV.v
+../rtl/Register_File.v
+../rtl/SYS_CTRL.v
+
+
+#FIFO BLOCKS
+../rtl/Binary2Gray.v
+../rtl/FIFO_Mem.v
+../rtl/FIFO_RD.v
+../rtl/FIFO_WR.v
+../rtl/FIFO_RD.v
+../rtl/sync.v
+../rtl/FIFO_top.v
+
+# RST_SYNC
+../rtl/Pulse_generator.v
+../rtl/Multi_FF.v
+../rtl/RST_SYNC.v
+
+# UART
+../rtl/FSM_CU_RX.v
+../rtl/FSM_CU_TX.v
+../rtl/edge_bit_counter_RX.v
+../rtl/Binary2Gray.v
+../rtl/MUX_TX.v
+../rtl/Parity_gen_TX.v
+../rtl/Parity_check_RX.v
+../rtl/parallel_2_serial_TX.v
+../rtl/Stop_check_RX.v
+../rtl/Start_check_RX.v
+../rtl/Serial_2_parallel_RX.v
+../rtl/sampler_RX.v
+../rtl/UART_TX.v
+../rtl/UART_RX.v
+../rtl/UART_TOP.v
+
+# system
+../rtl/system_top.v
+
