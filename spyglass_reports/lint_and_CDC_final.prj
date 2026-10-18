@@ -1,0 +1,71 @@
+#!SPYGLASS_PROJECT_FILE
+#!VERSION 3.0
+#  -------------------------------------------------------------------
+#  This is a software generated project file. Manual edits to this file could be lost during the next save operation
+#  Copyright Synopsys Inc.
+#  Last Updated By: SpyGlass SpyGlass_vL-2016.06
+#  Last Updated On Fri Oct  2 00:09:14 2026
+#
+#  -------------------------------------------------------------------
+
+##Data Import Section
+
+read_file -type sgdc sgdc/system.sgdc
+read_file -type gateslib ../std/scmetro_tsmc_cl013g_rvt_tt_1p2v_25c.lib
+read_file -type verilog ../rtl/ALU.v
+read_file -type verilog ../rtl/Binary2Gray.v
+read_file -type verilog ../rtl/CLK_gate.v
+read_file -type verilog ../rtl/DATA_SYNC.v
+read_file -type verilog ../rtl/edge_bit_counter_RX.v
+read_file -type verilog ../rtl/FIFO_Mem.v
+read_file -type verilog ../rtl/FIFO_RD.v
+read_file -type verilog ../rtl/FIFO_top.v
+read_file -type verilog ../rtl/FIFO_WR.v
+read_file -type verilog ../rtl/FSM_CU_RX.v
+read_file -type verilog ../rtl/FSM_CU_TX.v
+read_file -type verilog ../rtl/Integer_CLK_DIV.v
+read_file -type verilog ../rtl/Multi_FF.v
+read_file -type verilog ../rtl/MUX_TX.v
+read_file -type verilog ../rtl/parallel_2_serial_TX.v
+read_file -type verilog ../rtl/Parity_check_RX.v
+read_file -type verilog ../rtl/Parity_gen_TX.v
+read_file -type verilog ../rtl/Pulse_generator.v
+read_file -type verilog ../rtl/Register_File.v
+read_file -type verilog ../rtl/RST_SYNC.v
+read_file -type verilog ../rtl/sampler_RX.v
+read_file -type verilog ../rtl/Serial_2_parallel_RX.v
+read_file -type sourcelist ../rtl/src_files.list
+
+##Common Options Section
+
+set_option projectwdir .
+set_option language_mode mixed
+set_option designread_enable_synthesis yes
+set_option designread_disable_flatten no
+set_option active_methodology $SPYGLASS_HOME/GuideWare/latest/block/rtl_handoff
+
+
+##Goal Setup Section
+
+current_methodology $SPYGLASS_HOME/GuideWare/latest/block/rtl_handoff
+
+
+current_goal lint/lint_rtl -alltop
+read_file -type awl ./spyglass-1/lint/lint_rtl/spyglass-1_waiver_file.awl
+set_goal_option default_waiver_file ./spyglass-1/lint/lint_rtl/spyglass-1_waiver_file.awl
+
+
+current_goal cdc/clock_reset_integrity -alltop
+read_file -type awl ./spyglass-1/cdc/clock_reset_integrity/spyglass-1_waiver_file.awl
+set_goal_option default_waiver_file ./spyglass-1/cdc/clock_reset_integrity/spyglass-1_waiver_file.awl
+
+
+current_goal cdc/cdc_verify_struct -alltop
+read_file -type awl ./spyglass-1/cdc/cdc_verify_struct/spyglass-1_waiver_file.awl
+set_goal_option default_waiver_file ./spyglass-1/cdc/cdc_verify_struct/spyglass-1_waiver_file.awl
+
+
+current_goal cdc/cdc_verify -alltop
+read_file -type awl ./spyglass-1/cdc/cdc_verify/spyglass-1_waiver_file.awl
+set_goal_option default_waiver_file ./spyglass-1/cdc/cdc_verify/spyglass-1_waiver_file.awl
+

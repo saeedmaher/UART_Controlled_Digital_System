@@ -1,0 +1,69 @@
+
+current_design SYS_TOP	
+
+####################################################################################
+                  #### Section 1 : Clock Definition ####
+#################################################################################### 
+
+# UART Clock defination F = 3.6864MHz
+clock -name UART_CLK -domain UART -waveform {0 136} -period 271.267 
+
+# UART TX Clock defination F = 115.2KHz
+clock -name CLK_DIV0.o_div_clk -domain UART -waveform {0 4341} -period 8680.544 
+
+# UART RX Clock defination F = 3.6864MHz
+clock -name CLK_DIV1.o_div_clk -domain UART -waveform {0 136} -period 271.267 
+
+# REF Clock defination F = 50 MHz
+clock -name REF_CLK -domain REF -waveform {0 10} -period 20 
+
+####################################################################################
+                  #### Section 2 : Reset Definition ####
+####################################################################################
+
+reset -name RST_N -value 0 -async
+
+####################################################################################
+             #### Section 3 : set input/output clock domains  ####
+####################################################################################
+
+# Cons on the UART_RX_IN
+abstract_port -ports UART_RX_IN -clock UART_CLK
+
+# Cons on the UART_TX_OUT
+abstract_port -ports UART_TX_OUT -clock UART_CLK
+
+# Cons on the parity_error
+abstract_port -ports parity_error -clock UART_CLK
+
+# Cons on the stop_error
+abstract_port -ports stop_error -clock UART_CLK
+    
+# Cons on the RST_N
+abstract_port -ports RST_N -clock UART_CLK
+abstract_port -ports RST_N -clock REF_CLK
+
+####################################################################################
+             #### Section 4 : Quasi static signals  ####
+####################################################################################
+
+quasi_static -name SYS_TOP.RF0.UART_CON
+quasi_static -name SYS_TOP.RF0.DIV_ratio
+
+####################################################################################
+             #### Section 5 : set_case_analysis  ####
+####################################################################################
+
+set_case_analysis -name SYS_TOP.CLK_DIV1.i_clk_en -value 1
+set_case_analysis -name SYS_TOP.CLK_DIV0.i_clk_en -value 1
+
+####################################################################################
+             #### Section 6 : DATA/RESET Synchronizers  ####
+####################################################################################
+
+####################################################################################
+             #### Section 7 : Constraints  ####
+####################################################################################
+
+cdc_attribute -unrelated {SYS_TOP.en_data SYS_TOP.FIFO0.rptr_unsync}
+
