@@ -1,0 +1,46 @@
+# Single blocks
+ALU.v
+CLK_gate.v
+Integer_CLK_DIV.v
+Register_File.v
+SYS_CTRL.v
+RST_SYNC.v
+
+
+
+#FIFO BLOCKS
+Binary2Gray.v
+FIFO_Mem.v
+FIFO_RD.v
+FIFO_WR.v
+sync.v
+FIFO_top.v
+
+# Data_SYNC
+Pulse_generator.v
+Multi_FF.v
+DATA_SYNC.v
+
+# UART
+FSM_CU_RX.v
+FSM_CU_TX.v
+edge_bit_counter_RX.v
+Binary2Gray.v
+MUX_TX.v
+Parity_gen_TX.v
+Parity_check_RX.v
+parallel_2_serial_TX.v
+Stop_check_RX.v
+Start_check_RX.v
+Serial_2_parallel_RX.v
+sampler_RX.v
+UART_TX.v
+UART_RX.v
+UART_TOP.v
+
+# system
+system_top.v
+
+# test
+rand_pkg.sv
+SYS_TOP_TB.sv
