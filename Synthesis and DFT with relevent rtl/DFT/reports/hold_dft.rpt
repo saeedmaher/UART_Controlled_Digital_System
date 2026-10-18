@@ -1,0 +1,161 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -max_paths 20
+Design : SYS_TOP
+Version: O-2018.06-SP1
+Date   : Fri Oct  2 04:18:27 2026
+****************************************
+
+Operating Conditions: scmetro_tsmc_cl013g_rvt_ff_1p32v_m40c   Library: scmetro_tsmc_cl013g_rvt_ff_1p32v_m40c
+Wire Load Model Mode: top
+
+  Startpoint: UART0/TX0/P_data_reg_reg[7]
+              (rising edge-triggered flip-flop)
+  Endpoint: SO[0] (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  UART0/TX0/P_data_reg_reg[7]/CK (SDFFRQX2M)              0.00       0.00 r
+  UART0/TX0/P_data_reg_reg[7]/Q (SDFFRQX2M)               0.86       0.86 f
+  UART0/TX0/test_so (UART_TX_DATA_WIDTH8_test_1)          0.00       0.86 f
+  UART0/test_so (UART_TOP_DATA_WIDTH8_test_1)             0.00       0.86 f
+  SO[0] (out)                                             0.00       0.86 f
+  data arrival time                                                  0.86
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: UART0/RX0/C0/cs_reg[0]
+              (rising edge-triggered flip-flop)
+  Endpoint: parity_error
+            (output port clocked by MASTER_UART_CLK)
+  Path Group: (none)
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  UART0/RX0/C0/cs_reg[0]/CK (SDFFRQX2M)                   0.00       0.00 r
+  UART0/RX0/C0/cs_reg[0]/Q (SDFFRQX2M)                    0.59       0.59 f
+  UART0/RX0/C0/U32/Y (INVX2M)                             0.13       0.72 r
+  UART0/RX0/C0/U6/Y (NOR2X4M)                             0.19       0.91 f
+  UART0/RX0/C0/parity_error (FSM_CU_RX_test_1)            0.00       0.91 f
+  UART0/RX0/parity_error (UART_RX_DATA_WIDTH8_test_1)     0.00       0.91 f
+  UART0/rx_par_err (UART_TOP_DATA_WIDTH8_test_1)          0.00       0.91 f
+  parity_error (out)                                      0.00       0.91 f
+  data arrival time                                                  0.91
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: UART0/TX0/FSM0/cs_reg[2]
+              (rising edge-triggered flip-flop)
+  Endpoint: UART_TX_OUT
+            (output port clocked by MASTER_UART_CLK)
+  Path Group: (none)
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  UART0/TX0/FSM0/cs_reg[2]/CK (SDFFRQX2M)                 0.00       0.00 r
+  UART0/TX0/FSM0/cs_reg[2]/Q (SDFFRQX2M)                  0.51       0.51 r
+  UART0/TX0/FSM0/U13/Y (NOR2X2M)                          0.10       0.61 f
+  UART0/TX0/FSM0/mux_sel[1] (FSM_TX_test_1)               0.00       0.61 f
+  UART0/TX0/M0/sel[1] (MUX_TX)                            0.00       0.61 f
+  UART0/TX0/M0/U1/Y (OAI2B2X4M)                           0.33       0.94 f
+  UART0/TX0/M0/out (MUX_TX)                               0.00       0.94 f
+  UART0/TX0/tx_out (UART_TX_DATA_WIDTH8_test_1)           0.00       0.94 f
+  UART0/tx_out_s (UART_TOP_DATA_WIDTH8_test_1)            0.00       0.94 f
+  UART_TX_OUT (out)                                       0.00       0.94 f
+  data arrival time                                                  0.94
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: UART0/RX0/STOP_CHECKER0/err_reg
+              (rising edge-triggered flip-flop)
+  Endpoint: stop_error (output port clocked by MASTER_UART_CLK)
+  Path Group: (none)
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  UART0/RX0/STOP_CHECKER0/err_reg/CK (SDFFRQX2M)          0.00       0.00 r
+  UART0/RX0/STOP_CHECKER0/err_reg/Q (SDFFRQX2M)           0.53       0.53 f
+  UART0/RX0/STOP_CHECKER0/err (Stop_check_RX_test_1)      0.00       0.53 f
+  UART0/RX0/C0/stop_err (FSM_CU_RX_test_1)                0.00       0.53 f
+  UART0/RX0/C0/U31/Y (AND2X2M)                            0.42       0.95 f
+  UART0/RX0/C0/stop_error (FSM_CU_RX_test_1)              0.00       0.95 f
+  UART0/RX0/stop_error (UART_RX_DATA_WIDTH8_test_1)       0.00       0.95 f
+  UART0/rx_stop_err (UART_TOP_DATA_WIDTH8_test_1)         0.00       0.95 f
+  stop_error (out)                                        0.00       0.95 f
+  data arrival time                                                  0.95
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: FIFO0/MEM0/mem_reg[1][7]
+              (rising edge-triggered flip-flop)
+  Endpoint: SO[3] (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  FIFO0/MEM0/mem_reg[1][7]/CK (SDFFRQX1M)                 0.00       0.00 r
+  FIFO0/MEM0/mem_reg[1][7]/Q (SDFFRQX1M)                  0.57       0.57 f
+  FIFO0/MEM0/U2/Y (INVXLM)                                0.09       0.65 r
+  FIFO0/MEM0/U3/Y (INVX2M)                                0.31       0.96 f
+  FIFO0/MEM0/test_so1 (FIFO_Mem_DATA_WIDTH8_FIFO_DEPTH8_test_1)
+                                                          0.00       0.96 f
+  FIFO0/test_so1 (FIFO_top_DATA_WIDTH8_FIFO_DEPTH8_test_1)
+                                                          0.00       0.96 f
+  SO[3] (out)                                             0.00       0.96 f
+  data arrival time                                                  0.96
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: RF0/reg_file_reg[10][7]
+              (rising edge-triggered flip-flop)
+  Endpoint: SO[1] (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  RF0/reg_file_reg[10][7]/CK (SDFFRQX1M)                  0.00       0.00 r
+  RF0/reg_file_reg[10][7]/Q (SDFFRQX1M)                   0.57       0.57 f
+  RF0/U4/Y (INVXLM)                                       0.09       0.65 r
+  RF0/U5/Y (INVX2M)                                       0.31       0.96 f
+  RF0/test_so1 (Register_File_WIDTH8_DEPTH16_test_1)      0.00       0.96 f
+  SO[1] (out)                                             0.00       0.96 f
+  data arrival time                                                  0.96
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: RF0/RdData_reg[7]
+              (rising edge-triggered flip-flop)
+  Endpoint: SO[2] (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  RF0/RdData_reg[7]/CK (SDFFRQX1M)                        0.00       0.00 r
+  RF0/RdData_reg[7]/Q (SDFFRQX1M)                         0.58       0.58 f
+  RF0/U3/Y (CLKBUFX2M)                                    0.13       0.72 f
+  RF0/RdData[7] (Register_File_WIDTH8_DEPTH16_test_1)     0.00       0.72 f
+  U39/Y (BUFX2M)                                          0.41       1.12 f
+  SO[2] (out)                                             0.00       1.12 f
+  data arrival time                                                  1.12
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+1

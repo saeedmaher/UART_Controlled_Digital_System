@@ -1,0 +1,128 @@
+**************************************************
+Report         : not_compared_points
+
+Reference      : REF:/WORK/SYS_TOP
+Implementation : IMP:/WORK/SYS_TOP
+Version        : L-2016.03-SP1
+Date           : Fri Oct  2 04:19:06 2026
+**************************************************
+
+27 Not compared points:
+
+  Ref  LAT1X      Name(Last) REF:/WORK/SYS_TOP/ICG0/U0_TLATNCAX12Mv
+  Impl LAT1       Name(Last) IMP:/WORK/SYS_TOP/ICG0/U0_TLATNCAX12Mv
+
+  Ref  DFF        Name(Last) REF:/WORK/SYS_TOP/CLK_DIV0/clk_div_reg_reg
+  Impl DFF        Name(Last) IMP:/WORK/SYS_TOP/CLK_DIV0/clk_div_reg_reg
+
+  Ref  DFF        Name(Last) REF:/WORK/SYS_TOP/CLK_DIV0/counter_reg[0]
+  Impl DFF        Name(Last) IMP:/WORK/SYS_TOP/CLK_DIV0/counter_reg[0]
+
+  Ref  DFF        Name(Last) REF:/WORK/SYS_TOP/CLK_DIV0/counter_reg[1]
+  Impl DFF        Name(Last) IMP:/WORK/SYS_TOP/CLK_DIV0/counter_reg[1]
+
+  Ref  DFF        Name(Last) REF:/WORK/SYS_TOP/CLK_DIV0/counter_reg[2]
+  Impl DFF        Name(Last) IMP:/WORK/SYS_TOP/CLK_DIV0/counter_reg[2]
+
+  Ref  DFF        Name(Last) REF:/WORK/SYS_TOP/CLK_DIV0/counter_reg[3]
+  Impl DFF        Name(Last) IMP:/WORK/SYS_TOP/CLK_DIV0/counter_reg[3]
+
+  Ref  DFF        Name(Last) REF:/WORK/SYS_TOP/CLK_DIV0/counter_reg[4]
+  Impl DFF        Name(Last) IMP:/WORK/SYS_TOP/CLK_DIV0/counter_reg[4]
+
+  Ref  DFF        Name(Last) REF:/WORK/SYS_TOP/CLK_DIV0/counter_reg[5]
+  Impl DFF        Name(Last) IMP:/WORK/SYS_TOP/CLK_DIV0/counter_reg[5]
+
+  Ref  DFF        Name(Last) REF:/WORK/SYS_TOP/CLK_DIV0/counter_reg[6]
+  Impl DFF        Name(Last) IMP:/WORK/SYS_TOP/CLK_DIV0/counter_reg[6]
+
+  Ref  DFF        Name(Last) REF:/WORK/SYS_TOP/CLK_DIV0/counter_reg[7]
+  Impl DFF        Name(Last) IMP:/WORK/SYS_TOP/CLK_DIV0/counter_reg[7]
+
+  Ref  DFF        Name(Last) REF:/WORK/SYS_TOP/CLK_DIV1/clk_div_reg_reg
+  Impl DFF        Name(Last) IMP:/WORK/SYS_TOP/CLK_DIV1/clk_div_reg_reg
+
+  Ref  DFF        Name(Last) REF:/WORK/SYS_TOP/CLK_DIV1/counter_reg[0]
+  Impl DFF        Name(Last) IMP:/WORK/SYS_TOP/CLK_DIV1/counter_reg[0]
+
+  Ref  DFF        Name(Last) REF:/WORK/SYS_TOP/CLK_DIV1/counter_reg[1]
+  Impl DFF        Name(Last) IMP:/WORK/SYS_TOP/CLK_DIV1/counter_reg[1]
+
+  Ref  DFF        Name(Last) REF:/WORK/SYS_TOP/CLK_DIV1/counter_reg[2]
+  Impl DFF        Name(Last) IMP:/WORK/SYS_TOP/CLK_DIV1/counter_reg[2]
+
+  Ref  DFF        Name(Last) REF:/WORK/SYS_TOP/CLK_DIV1/counter_reg[3]
+  Impl DFF        Name(Last) IMP:/WORK/SYS_TOP/CLK_DIV1/counter_reg[3]
+
+  Ref  DFF        Name(Last) REF:/WORK/SYS_TOP/CLK_DIV1/counter_reg[4]
+  Impl DFF        Name(Last) IMP:/WORK/SYS_TOP/CLK_DIV1/counter_reg[4]
+
+  Ref  DFF        Name(Last) REF:/WORK/SYS_TOP/CLK_DIV1/counter_reg[5]
+  Impl DFF        Name(Last) IMP:/WORK/SYS_TOP/CLK_DIV1/counter_reg[5]
+
+  Ref  DFF        Name(Last) REF:/WORK/SYS_TOP/CLK_DIV1/counter_reg[6]
+  Impl DFF        Name(Last) IMP:/WORK/SYS_TOP/CLK_DIV1/counter_reg[6]
+
+  Ref  DFF        Name(Last) REF:/WORK/SYS_TOP/CLK_DIV1/counter_reg[7]
+  Impl DFF        Name(Last) IMP:/WORK/SYS_TOP/CLK_DIV1/counter_reg[7]
+
+  Ref  DFF        Name(Last) REF:/WORK/SYS_TOP/RST_SYNC0/rst_sync_reg_reg[0]
+  Impl DFF        Name(Last) IMP:/WORK/SYS_TOP/RST_SYNC0/rst_sync_reg_reg[0]
+
+  Ref  DFF        Name(Last) REF:/WORK/SYS_TOP/RST_SYNC0/rst_sync_reg_reg[1]
+  Impl DFF        Name(Last) IMP:/WORK/SYS_TOP/RST_SYNC0/rst_sync_reg_reg[1]
+
+  Ref  DFF        Name(Last) REF:/WORK/SYS_TOP/RST_SYNC1/rst_sync_reg_reg[0]
+  Impl DFF        Name(Last) IMP:/WORK/SYS_TOP/RST_SYNC1/rst_sync_reg_reg[0]
+
+  Ref  DFF        Name(Last) REF:/WORK/SYS_TOP/RST_SYNC1/rst_sync_reg_reg[1]
+  Impl DFF        Name(Last) IMP:/WORK/SYS_TOP/RST_SYNC1/rst_sync_reg_reg[1]
+
+  Ref  Port       Name(Last) REF:/WORK/SYS_TOP/SO[0]
+  Impl Port       Name(Last) IMP:/WORK/SYS_TOP/SO[0]
+
+  Ref  Port       Name(Last) REF:/WORK/SYS_TOP/SO[1]
+  Impl Port       Name(Last) IMP:/WORK/SYS_TOP/SO[1]
+
+  Ref  Port       Name(Last) REF:/WORK/SYS_TOP/SO[2]
+  Impl Port       Name(Last) IMP:/WORK/SYS_TOP/SO[2]
+
+  Ref  Port       Name(Last) REF:/WORK/SYS_TOP/SO[3]
+  Impl Port       Name(Last) IMP:/WORK/SYS_TOP/SO[3]
+
+ [BBNet: multiply-driven net
+  BBox:  black-box
+  BBPin: black-box pin
+  Block: hierarchical block
+  BlPin: hierarchical block pin
+  Cut:   cut-point
+  DFF:   non-constant DFF register
+  DFF0:  constant 0 DFF register
+  DFF1:  constant 1 DFF register
+  DFFX:  constant X DFF register
+  DFF0X: constrained 0X DFF register
+  DFF1X: constrained 1X DFF register
+  LAT:   non-constant latch register
+  LAT0:  constant 0 latch register
+  LAT1:  constant 1 latch register
+  LATX:  constant X latch register
+  LAT0X: constrained 0X latch register
+  LAT1X: constrained 1X latch register
+  LATCG: clock-gating latch register
+  TLA:   transparent latch register
+  TLA0X: transparent constrained 0X latch register
+  TLA1X: transparent constrained 1X latch register
+  Loop:  cycle break point
+  Net:   matchable net
+  Port:  primary (top-level) port
+  Und:   undriven signal cut-point
+  Unk:   unknown signal cut-point
+
+  Func:  matched by function
+  Name:  matched by name
+  Topo:  matched by topology
+  User:  matched by user
+
+  Last:  matched during most recent matching]
+
+1

@@ -1,0 +1,315 @@
+ 
+****************************************
+check_design summary:
+Version:     O-2018.06-SP1
+Date:        Fri Sep 25 23:04:10 2026
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                      3
+    Feedthrough (LINT-29)                                           1
+    Shorted outputs (LINT-31)                                       1
+    Constant outputs (LINT-52)                                      1
+
+Cells                                                              31
+    Cells do not drive (LINT-1)                                    23
+    Connected to power or ground (LINT-32)                          7
+    Nets connected to multiple pins on same cell (LINT-33)          1
+--------------------------------------------------------------------------------
+
+Warning: In design 'Integer_CLK_DIV', cell 'C101' does not drive any nets. (LINT-1)
+Warning: In design 'Integer_CLK_DIV', cell 'C103' does not drive any nets. (LINT-1)
+Warning: In design 'Integer_CLK_DIV', cell 'C106' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_DATA_IN_WIDTH8_FUNC_WIDTH4_DATA_OUT_WIDTH16', cell 'C339' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_DATA_IN_WIDTH8_FUNC_WIDTH4_DATA_OUT_WIDTH16', cell 'C340' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_DATA_IN_WIDTH8_FUNC_WIDTH4_DATA_OUT_WIDTH16', cell 'C341' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_DATA_IN_WIDTH8_FUNC_WIDTH4_DATA_OUT_WIDTH16', cell 'C342' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_DATA_IN_WIDTH8_FUNC_WIDTH4_DATA_OUT_WIDTH16', cell 'C375' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_DATA_IN_WIDTH8_FUNC_WIDTH4_DATA_OUT_WIDTH16', cell 'C377' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_DATA_IN_WIDTH8_FUNC_WIDTH4_DATA_OUT_WIDTH16', cell 'C379' does not drive any nets. (LINT-1)
+Warning: In design 'FIFO_WR_FIFO_DEPTH8', cell 'C49' does not drive any nets. (LINT-1)
+Warning: In design 'FIFO_RD_FIFO_DEPTH8', cell 'C46' does not drive any nets. (LINT-1)
+Warning: In design 'parallel_2_serial_TX_WIDTH8', cell 'C64' does not drive any nets. (LINT-1)
+Warning: In design 'FSM_CU_RX', cell 'B_19' does not drive any nets. (LINT-1)
+Warning: In design 'FSM_CU_RX', cell 'C308' does not drive any nets. (LINT-1)
+Warning: In design 'FSM_CU_RX', cell 'B_21' does not drive any nets. (LINT-1)
+Warning: In design 'FSM_CU_RX', cell 'B_22' does not drive any nets. (LINT-1)
+Warning: In design 'FSM_CU_RX', cell 'B_23' does not drive any nets. (LINT-1)
+Warning: In design 'FSM_CU_RX', cell 'C340' does not drive any nets. (LINT-1)
+Warning: In design 'edge_bit_counter_RX', cell 'C119' does not drive any nets. (LINT-1)
+Warning: In design 'edge_bit_counter_RX', cell 'C129' does not drive any nets. (LINT-1)
+Warning: In design 'edge_bit_counter_RX', cell 'C130' does not drive any nets. (LINT-1)
+Warning: In design 'sampler_RX', cell 'C126' does not drive any nets. (LINT-1)
+Warning: In design 'bin_2_gray_WIDTH4', input port 'bin_in[3]' is connected directly to output port 'gray_out[3]'. (LINT-29)
+Warning: In design 'FSM_CU_RX', output port 'enable_counter' is connected directly to output port 'sampling_en'. (LINT-31)
+Warning: In design 'SYS_TOP', a pin on submodule 'CLK_DIV1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'i_div_ratio[7]' is connected to logic 0. 
+Warning: In design 'SYS_TOP', a pin on submodule 'CLK_DIV1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'i_div_ratio[6]' is connected to logic 0. 
+Warning: In design 'SYS_TOP', a pin on submodule 'CLK_DIV1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'i_div_ratio[5]' is connected to logic 0. 
+Warning: In design 'SYS_TOP', a pin on submodule 'CLK_DIV1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'i_div_ratio[4]' is connected to logic 0. 
+Warning: In design 'SYS_TOP', a pin on submodule 'CLK_DIV1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'i_div_ratio[3]' is connected to logic 0. 
+Warning: In design 'UART_TX_DATA_WIDTH8', a pin on submodule 'M0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'in0' is connected to logic 1. 
+Warning: In design 'UART_TX_DATA_WIDTH8', a pin on submodule 'M0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'in1' is connected to logic 0. 
+Warning: In design 'SYS_TOP', the same net is connected to more than one pin on submodule 'CLK_DIV1'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'i_div_ratio[7]', 'i_div_ratio[6]'', 'i_div_ratio[5]', 'i_div_ratio[4]', 'i_div_ratio[3]'.
+Warning: In design 'SYS_CTRL_OPERANDS_WIDTH8_ALU_OUT_WIDTH16_ALU_FUNC_WIDTH4_REG_WIDTH8_ADDR_WIDTH4_UART_DATA_WIDTH8', output port 'clk_div_en' is connected directly to 'logic 1'. (LINT-52)
+1
+ 
+****************************************
+check_design summary:
+Version:     O-2018.06-SP1
+Date:        Fri Sep 25 23:05:49 2026
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                      3
+    Feedthrough (LINT-29)                                           1
+    Shorted outputs (LINT-31)                                       1
+    Constant outputs (LINT-52)                                      1
+
+Cells                                                              31
+    Cells do not drive (LINT-1)                                    23
+    Connected to power or ground (LINT-32)                          7
+    Nets connected to multiple pins on same cell (LINT-33)          1
+--------------------------------------------------------------------------------
+
+Warning: In design 'Integer_CLK_DIV', cell 'C101' does not drive any nets. (LINT-1)
+Warning: In design 'Integer_CLK_DIV', cell 'C103' does not drive any nets. (LINT-1)
+Warning: In design 'Integer_CLK_DIV', cell 'C106' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_DATA_IN_WIDTH8_FUNC_WIDTH4_DATA_OUT_WIDTH16', cell 'C339' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_DATA_IN_WIDTH8_FUNC_WIDTH4_DATA_OUT_WIDTH16', cell 'C340' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_DATA_IN_WIDTH8_FUNC_WIDTH4_DATA_OUT_WIDTH16', cell 'C341' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_DATA_IN_WIDTH8_FUNC_WIDTH4_DATA_OUT_WIDTH16', cell 'C342' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_DATA_IN_WIDTH8_FUNC_WIDTH4_DATA_OUT_WIDTH16', cell 'C375' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_DATA_IN_WIDTH8_FUNC_WIDTH4_DATA_OUT_WIDTH16', cell 'C377' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_DATA_IN_WIDTH8_FUNC_WIDTH4_DATA_OUT_WIDTH16', cell 'C379' does not drive any nets. (LINT-1)
+Warning: In design 'FIFO_WR_FIFO_DEPTH8', cell 'C49' does not drive any nets. (LINT-1)
+Warning: In design 'FIFO_RD_FIFO_DEPTH8', cell 'C46' does not drive any nets. (LINT-1)
+Warning: In design 'parallel_2_serial_TX_WIDTH8', cell 'C64' does not drive any nets. (LINT-1)
+Warning: In design 'FSM_CU_RX', cell 'B_19' does not drive any nets. (LINT-1)
+Warning: In design 'FSM_CU_RX', cell 'C308' does not drive any nets. (LINT-1)
+Warning: In design 'FSM_CU_RX', cell 'B_21' does not drive any nets. (LINT-1)
+Warning: In design 'FSM_CU_RX', cell 'B_22' does not drive any nets. (LINT-1)
+Warning: In design 'FSM_CU_RX', cell 'B_23' does not drive any nets. (LINT-1)
+Warning: In design 'FSM_CU_RX', cell 'C340' does not drive any nets. (LINT-1)
+Warning: In design 'edge_bit_counter_RX', cell 'C119' does not drive any nets. (LINT-1)
+Warning: In design 'edge_bit_counter_RX', cell 'C129' does not drive any nets. (LINT-1)
+Warning: In design 'edge_bit_counter_RX', cell 'C130' does not drive any nets. (LINT-1)
+Warning: In design 'sampler_RX', cell 'C126' does not drive any nets. (LINT-1)
+Warning: In design 'bin_2_gray_WIDTH4', input port 'bin_in[3]' is connected directly to output port 'gray_out[3]'. (LINT-29)
+Warning: In design 'FSM_CU_RX', output port 'enable_counter' is connected directly to output port 'sampling_en'. (LINT-31)
+Warning: In design 'SYS_TOP', a pin on submodule 'CLK_DIV1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'i_div_ratio[7]' is connected to logic 0. 
+Warning: In design 'SYS_TOP', a pin on submodule 'CLK_DIV1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'i_div_ratio[6]' is connected to logic 0. 
+Warning: In design 'SYS_TOP', a pin on submodule 'CLK_DIV1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'i_div_ratio[5]' is connected to logic 0. 
+Warning: In design 'SYS_TOP', a pin on submodule 'CLK_DIV1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'i_div_ratio[4]' is connected to logic 0. 
+Warning: In design 'SYS_TOP', a pin on submodule 'CLK_DIV1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'i_div_ratio[3]' is connected to logic 0. 
+Warning: In design 'UART_TX_DATA_WIDTH8', a pin on submodule 'M0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'in0' is connected to logic 1. 
+Warning: In design 'UART_TX_DATA_WIDTH8', a pin on submodule 'M0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'in1' is connected to logic 0. 
+Warning: In design 'SYS_TOP', the same net is connected to more than one pin on submodule 'CLK_DIV1'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'i_div_ratio[7]', 'i_div_ratio[6]'', 'i_div_ratio[5]', 'i_div_ratio[4]', 'i_div_ratio[3]'.
+Warning: In design 'SYS_CTRL_OPERANDS_WIDTH8_ALU_OUT_WIDTH16_ALU_FUNC_WIDTH4_REG_WIDTH8_ADDR_WIDTH4_UART_DATA_WIDTH8', output port 'clk_div_en' is connected directly to 'logic 1'. (LINT-52)
+1
+ 
+****************************************
+check_design summary:
+Version:     O-2018.06-SP1
+Date:        Fri Sep 25 23:06:33 2026
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                      3
+    Feedthrough (LINT-29)                                           1
+    Shorted outputs (LINT-31)                                       1
+    Constant outputs (LINT-52)                                      1
+
+Cells                                                              31
+    Cells do not drive (LINT-1)                                    23
+    Connected to power or ground (LINT-32)                          7
+    Nets connected to multiple pins on same cell (LINT-33)          1
+--------------------------------------------------------------------------------
+
+Warning: In design 'Integer_CLK_DIV', cell 'C101' does not drive any nets. (LINT-1)
+Warning: In design 'Integer_CLK_DIV', cell 'C103' does not drive any nets. (LINT-1)
+Warning: In design 'Integer_CLK_DIV', cell 'C106' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_DATA_IN_WIDTH8_FUNC_WIDTH4_DATA_OUT_WIDTH16', cell 'C339' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_DATA_IN_WIDTH8_FUNC_WIDTH4_DATA_OUT_WIDTH16', cell 'C340' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_DATA_IN_WIDTH8_FUNC_WIDTH4_DATA_OUT_WIDTH16', cell 'C341' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_DATA_IN_WIDTH8_FUNC_WIDTH4_DATA_OUT_WIDTH16', cell 'C342' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_DATA_IN_WIDTH8_FUNC_WIDTH4_DATA_OUT_WIDTH16', cell 'C375' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_DATA_IN_WIDTH8_FUNC_WIDTH4_DATA_OUT_WIDTH16', cell 'C377' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_DATA_IN_WIDTH8_FUNC_WIDTH4_DATA_OUT_WIDTH16', cell 'C379' does not drive any nets. (LINT-1)
+Warning: In design 'FIFO_WR_FIFO_DEPTH8', cell 'C49' does not drive any nets. (LINT-1)
+Warning: In design 'FIFO_RD_FIFO_DEPTH8', cell 'C46' does not drive any nets. (LINT-1)
+Warning: In design 'parallel_2_serial_TX_WIDTH8', cell 'C64' does not drive any nets. (LINT-1)
+Warning: In design 'FSM_CU_RX', cell 'B_19' does not drive any nets. (LINT-1)
+Warning: In design 'FSM_CU_RX', cell 'C308' does not drive any nets. (LINT-1)
+Warning: In design 'FSM_CU_RX', cell 'B_21' does not drive any nets. (LINT-1)
+Warning: In design 'FSM_CU_RX', cell 'B_22' does not drive any nets. (LINT-1)
+Warning: In design 'FSM_CU_RX', cell 'B_23' does not drive any nets. (LINT-1)
+Warning: In design 'FSM_CU_RX', cell 'C340' does not drive any nets. (LINT-1)
+Warning: In design 'edge_bit_counter_RX', cell 'C119' does not drive any nets. (LINT-1)
+Warning: In design 'edge_bit_counter_RX', cell 'C129' does not drive any nets. (LINT-1)
+Warning: In design 'edge_bit_counter_RX', cell 'C130' does not drive any nets. (LINT-1)
+Warning: In design 'sampler_RX', cell 'C126' does not drive any nets. (LINT-1)
+Warning: In design 'bin_2_gray_WIDTH4', input port 'bin_in[3]' is connected directly to output port 'gray_out[3]'. (LINT-29)
+Warning: In design 'FSM_CU_RX', output port 'enable_counter' is connected directly to output port 'sampling_en'. (LINT-31)
+Warning: In design 'SYS_TOP', a pin on submodule 'CLK_DIV1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'i_div_ratio[7]' is connected to logic 0. 
+Warning: In design 'SYS_TOP', a pin on submodule 'CLK_DIV1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'i_div_ratio[6]' is connected to logic 0. 
+Warning: In design 'SYS_TOP', a pin on submodule 'CLK_DIV1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'i_div_ratio[5]' is connected to logic 0. 
+Warning: In design 'SYS_TOP', a pin on submodule 'CLK_DIV1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'i_div_ratio[4]' is connected to logic 0. 
+Warning: In design 'SYS_TOP', a pin on submodule 'CLK_DIV1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'i_div_ratio[3]' is connected to logic 0. 
+Warning: In design 'UART_TX_DATA_WIDTH8', a pin on submodule 'M0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'in0' is connected to logic 1. 
+Warning: In design 'UART_TX_DATA_WIDTH8', a pin on submodule 'M0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'in1' is connected to logic 0. 
+Warning: In design 'SYS_TOP', the same net is connected to more than one pin on submodule 'CLK_DIV1'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'i_div_ratio[7]', 'i_div_ratio[6]'', 'i_div_ratio[5]', 'i_div_ratio[4]', 'i_div_ratio[3]'.
+Warning: In design 'SYS_CTRL_OPERANDS_WIDTH8_ALU_OUT_WIDTH16_ALU_FUNC_WIDTH4_REG_WIDTH8_ADDR_WIDTH4_UART_DATA_WIDTH8', output port 'clk_div_en' is connected directly to 'logic 1'. (LINT-52)
+1
+ 
+****************************************
+check_design summary:
+Version:     O-2018.06-SP1
+Date:        Fri Sep 25 23:28:54 2026
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                      3
+    Feedthrough (LINT-29)                                           1
+    Shorted outputs (LINT-31)                                       1
+    Constant outputs (LINT-52)                                      1
+
+Cells                                                              31
+    Cells do not drive (LINT-1)                                    23
+    Connected to power or ground (LINT-32)                          7
+    Nets connected to multiple pins on same cell (LINT-33)          1
+--------------------------------------------------------------------------------
+
+Warning: In design 'Integer_CLK_DIV', cell 'C101' does not drive any nets. (LINT-1)
+Warning: In design 'Integer_CLK_DIV', cell 'C103' does not drive any nets. (LINT-1)
+Warning: In design 'Integer_CLK_DIV', cell 'C106' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_DATA_IN_WIDTH8_FUNC_WIDTH4_DATA_OUT_WIDTH16', cell 'C368' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_DATA_IN_WIDTH8_FUNC_WIDTH4_DATA_OUT_WIDTH16', cell 'C369' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_DATA_IN_WIDTH8_FUNC_WIDTH4_DATA_OUT_WIDTH16', cell 'C370' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_DATA_IN_WIDTH8_FUNC_WIDTH4_DATA_OUT_WIDTH16', cell 'C374' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_DATA_IN_WIDTH8_FUNC_WIDTH4_DATA_OUT_WIDTH16', cell 'C407' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_DATA_IN_WIDTH8_FUNC_WIDTH4_DATA_OUT_WIDTH16', cell 'C409' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_DATA_IN_WIDTH8_FUNC_WIDTH4_DATA_OUT_WIDTH16', cell 'C411' does not drive any nets. (LINT-1)
+Warning: In design 'FIFO_WR_FIFO_DEPTH8', cell 'C49' does not drive any nets. (LINT-1)
+Warning: In design 'FIFO_RD_FIFO_DEPTH8', cell 'C46' does not drive any nets. (LINT-1)
+Warning: In design 'parallel_2_serial_TX_WIDTH8', cell 'C64' does not drive any nets. (LINT-1)
+Warning: In design 'FSM_CU_RX', cell 'B_19' does not drive any nets. (LINT-1)
+Warning: In design 'FSM_CU_RX', cell 'C308' does not drive any nets. (LINT-1)
+Warning: In design 'FSM_CU_RX', cell 'B_21' does not drive any nets. (LINT-1)
+Warning: In design 'FSM_CU_RX', cell 'B_22' does not drive any nets. (LINT-1)
+Warning: In design 'FSM_CU_RX', cell 'B_23' does not drive any nets. (LINT-1)
+Warning: In design 'FSM_CU_RX', cell 'C340' does not drive any nets. (LINT-1)
+Warning: In design 'edge_bit_counter_RX', cell 'C119' does not drive any nets. (LINT-1)
+Warning: In design 'edge_bit_counter_RX', cell 'C129' does not drive any nets. (LINT-1)
+Warning: In design 'edge_bit_counter_RX', cell 'C130' does not drive any nets. (LINT-1)
+Warning: In design 'sampler_RX', cell 'C126' does not drive any nets. (LINT-1)
+Warning: In design 'bin_2_gray_WIDTH4', input port 'bin_in[3]' is connected directly to output port 'gray_out[3]'. (LINT-29)
+Warning: In design 'FSM_CU_RX', output port 'enable_counter' is connected directly to output port 'sampling_en'. (LINT-31)
+Warning: In design 'SYS_TOP', a pin on submodule 'CLK_DIV1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'i_div_ratio[7]' is connected to logic 0. 
+Warning: In design 'SYS_TOP', a pin on submodule 'CLK_DIV1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'i_div_ratio[6]' is connected to logic 0. 
+Warning: In design 'SYS_TOP', a pin on submodule 'CLK_DIV1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'i_div_ratio[5]' is connected to logic 0. 
+Warning: In design 'SYS_TOP', a pin on submodule 'CLK_DIV1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'i_div_ratio[4]' is connected to logic 0. 
+Warning: In design 'SYS_TOP', a pin on submodule 'CLK_DIV1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'i_div_ratio[3]' is connected to logic 0. 
+Warning: In design 'UART_TX_DATA_WIDTH8', a pin on submodule 'M0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'in0' is connected to logic 1. 
+Warning: In design 'UART_TX_DATA_WIDTH8', a pin on submodule 'M0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'in1' is connected to logic 0. 
+Warning: In design 'SYS_TOP', the same net is connected to more than one pin on submodule 'CLK_DIV1'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'i_div_ratio[7]', 'i_div_ratio[6]'', 'i_div_ratio[5]', 'i_div_ratio[4]', 'i_div_ratio[3]'.
+Warning: In design 'SYS_CTRL_OPERANDS_WIDTH8_ALU_OUT_WIDTH16_ALU_FUNC_WIDTH4_REG_WIDTH8_ADDR_WIDTH4_UART_DATA_WIDTH8', output port 'clk_div_en' is connected directly to 'logic 1'. (LINT-52)
+1
+ 
+****************************************
+check_design summary:
+Version:     O-2018.06-SP1
+Date:        Fri Oct  2 04:02:09 2026
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                      3
+    Feedthrough (LINT-29)                                           1
+    Shorted outputs (LINT-31)                                       1
+    Constant outputs (LINT-52)                                      1
+
+Cells                                                              31
+    Cells do not drive (LINT-1)                                    23
+    Connected to power or ground (LINT-32)                          7
+    Nets connected to multiple pins on same cell (LINT-33)          1
+--------------------------------------------------------------------------------
+
+Warning: In design 'Integer_CLK_DIV', cell 'C101' does not drive any nets. (LINT-1)
+Warning: In design 'Integer_CLK_DIV', cell 'C103' does not drive any nets. (LINT-1)
+Warning: In design 'Integer_CLK_DIV', cell 'C106' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_DATA_IN_WIDTH8_FUNC_WIDTH4_DATA_OUT_WIDTH16', cell 'C368' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_DATA_IN_WIDTH8_FUNC_WIDTH4_DATA_OUT_WIDTH16', cell 'C369' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_DATA_IN_WIDTH8_FUNC_WIDTH4_DATA_OUT_WIDTH16', cell 'C370' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_DATA_IN_WIDTH8_FUNC_WIDTH4_DATA_OUT_WIDTH16', cell 'C374' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_DATA_IN_WIDTH8_FUNC_WIDTH4_DATA_OUT_WIDTH16', cell 'C407' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_DATA_IN_WIDTH8_FUNC_WIDTH4_DATA_OUT_WIDTH16', cell 'C409' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_DATA_IN_WIDTH8_FUNC_WIDTH4_DATA_OUT_WIDTH16', cell 'C411' does not drive any nets. (LINT-1)
+Warning: In design 'FIFO_WR_FIFO_DEPTH8', cell 'C62' does not drive any nets. (LINT-1)
+Warning: In design 'FIFO_RD_FIFO_DEPTH8', cell 'C59' does not drive any nets. (LINT-1)
+Warning: In design 'parallel_2_serial_TX_WIDTH8', cell 'C64' does not drive any nets. (LINT-1)
+Warning: In design 'FSM_CU_RX', cell 'B_19' does not drive any nets. (LINT-1)
+Warning: In design 'FSM_CU_RX', cell 'C308' does not drive any nets. (LINT-1)
+Warning: In design 'FSM_CU_RX', cell 'B_21' does not drive any nets. (LINT-1)
+Warning: In design 'FSM_CU_RX', cell 'B_22' does not drive any nets. (LINT-1)
+Warning: In design 'FSM_CU_RX', cell 'B_23' does not drive any nets. (LINT-1)
+Warning: In design 'FSM_CU_RX', cell 'C340' does not drive any nets. (LINT-1)
+Warning: In design 'edge_bit_counter_RX', cell 'C119' does not drive any nets. (LINT-1)
+Warning: In design 'edge_bit_counter_RX', cell 'C129' does not drive any nets. (LINT-1)
+Warning: In design 'edge_bit_counter_RX', cell 'C130' does not drive any nets. (LINT-1)
+Warning: In design 'sampler_RX', cell 'C126' does not drive any nets. (LINT-1)
+Warning: In design 'bin_2_gray_WIDTH4', input port 'bin_in[3]' is connected directly to output port 'gray_out[3]'. (LINT-29)
+Warning: In design 'FSM_CU_RX', output port 'enable_counter' is connected directly to output port 'sampling_en'. (LINT-31)
+Warning: In design 'SYS_TOP', a pin on submodule 'CLK_DIV1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'i_div_ratio[7]' is connected to logic 0. 
+Warning: In design 'SYS_TOP', a pin on submodule 'CLK_DIV1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'i_div_ratio[6]' is connected to logic 0. 
+Warning: In design 'SYS_TOP', a pin on submodule 'CLK_DIV1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'i_div_ratio[5]' is connected to logic 0. 
+Warning: In design 'SYS_TOP', a pin on submodule 'CLK_DIV1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'i_div_ratio[4]' is connected to logic 0. 
+Warning: In design 'SYS_TOP', a pin on submodule 'CLK_DIV1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'i_div_ratio[3]' is connected to logic 0. 
+Warning: In design 'UART_TX_DATA_WIDTH8', a pin on submodule 'M0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'in0' is connected to logic 1. 
+Warning: In design 'UART_TX_DATA_WIDTH8', a pin on submodule 'M0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'in1' is connected to logic 0. 
+Warning: In design 'SYS_TOP', the same net is connected to more than one pin on submodule 'CLK_DIV1'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'i_div_ratio[7]', 'i_div_ratio[6]'', 'i_div_ratio[5]', 'i_div_ratio[4]', 'i_div_ratio[3]'.
+Warning: In design 'SYS_CTRL_OPERANDS_WIDTH8_ALU_OUT_WIDTH16_ALU_FUNC_WIDTH4_REG_WIDTH8_ADDR_WIDTH4_UART_DATA_WIDTH8', output port 'clk_div_en' is connected directly to 'logic 1'. (LINT-52)
+1

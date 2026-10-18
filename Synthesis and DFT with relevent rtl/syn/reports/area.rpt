@@ -1,0 +1,82 @@
+ 
+****************************************
+Report : area
+Design : SYS_TOP
+Version: O-2018.06-SP1
+Date   : Fri Oct  2 04:02:17 2026
+****************************************
+
+Library(s) Used:
+
+    scmetro_tsmc_cl013g_rvt_ss_1p08v_125c (File: /home/ICer/project/std/scmetro_tsmc_cl013g_rvt_ss_1p08v_125c.db)
+
+Number of ports:                          732
+Number of nets:                          2654
+Number of cells:                         1907
+Number of combinational cells:           1498
+Number of sequential cells:               370
+Number of macros/black boxes:               0
+Number of buf/inv:                        246
+Number of references:                      18
+
+Combinational area:              12441.249299
+Buf/Inv area:                      922.532821
+Noncombinational area:            9259.452187
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                 21700.701486
+Total area:                 undefined
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area            Local cell area
+                                  -------------------  ----------------------------- 
+Hierarchical cell                 Absolute    Percent  Combi-      Noncombi-  Black-
+                                  Total       Total    national    national   boxes   Design
+--------------------------------  ----------  -------  ----------  ---------  ------  ------------------------------------------------------------------------------------------------
+SYS_TOP                           21700.7015    100.0     49.4214     0.0000  0.0000  SYS_TOP
+ALU0                               5590.5017     25.8   1094.3310   440.0858  0.0000  ALU_DATA_IN_WIDTH8_FUNC_WIDTH4_DATA_OUT_WIDTH16
+ALU0/add_38                         231.8099      1.1    231.8099     0.0000  0.0000  ALU_DATA_IN_WIDTH8_FUNC_WIDTH4_DATA_OUT_WIDTH16_DW01_add_0
+ALU0/div_57                        1437.9274      6.6   1437.9274     0.0000  0.0000  ALU_DATA_IN_WIDTH8_FUNC_WIDTH4_DATA_OUT_WIDTH16_DW_div_uns_0
+ALU0/mult_48                       2120.4134      9.8   1914.4909     0.0000  0.0000  ALU_DATA_IN_WIDTH8_FUNC_WIDTH4_DATA_OUT_WIDTH16_DW02_mult_0
+ALU0/mult_48/FS_1                   205.9225      0.9    205.9225     0.0000  0.0000  ALU_DATA_IN_WIDTH8_FUNC_WIDTH4_DATA_OUT_WIDTH16_DW01_add_1
+ALU0/sub_43                         265.9342      1.2    265.9342     0.0000  0.0000  ALU_DATA_IN_WIDTH8_FUNC_WIDTH4_DATA_OUT_WIDTH16_DW01_sub_0
+CLK_DIV0                            682.4860      3.1    449.4994   232.9866  0.0000  Integer_CLK_DIV_0
+CLK_DIV1                            682.4860      3.1    449.4994   232.9866  0.0000  Integer_CLK_DIV_1
+CTRL0                              1469.6983      6.8    795.4492   674.2491  0.0000  SYS_CTRL_OPERANDS_WIDTH8_ALU_OUT_WIDTH16_ALU_FUNC_WIDTH4_REG_WIDTH8_ADDR_WIDTH4_UART_DATA_WIDTH8
+D_SYNC0                             395.3712      1.8     78.8389   232.9866  0.0000  DATA_SYNC_NUMBER_STAGES2_BUS_WIDTH8
+D_SYNC0/MFF0                         51.7748      0.2      0.0000    51.7748  0.0000  Multi_FF_NUM_STAGES2
+D_SYNC0/PG0                          31.7709      0.1      5.8835    25.8874  0.0000  Pulse_generator_1
+FIFO0                              3861.9294     17.8     12.9437     0.0000  0.0000  FIFO_top_DATA_WIDTH8_FIFO_DEPTH8
+FIFO0/MEM0                         2698.1731     12.4   1041.3795  1656.7936  0.0000  FIFO_Mem_DATA_WIDTH8_FIFO_DEPTH8
+FIFO0/RD0                           368.3071      1.7    125.9069   207.0992  0.0000  FIFO_RD_FIFO_DEPTH8
+FIFO0/RD0/B2G                        35.3010      0.2     35.3010     0.0000  0.0000  bin_2_gray_WIDTH4_1
+FIFO0/WR0                           368.3071      1.7    125.9069   207.0992  0.0000  FIFO_WR_FIFO_DEPTH8
+FIFO0/WR0/B2G                        35.3010      0.2     35.3010     0.0000  0.0000  bin_2_gray_WIDTH4_0
+FIFO0/rd2rwrsync                    207.0992      1.0      0.0000   207.0992  0.0000  Double_FF_FIFO_DEPTH8_1
+FIFO0/wr2rd_sync                    207.0992      1.0      0.0000   207.0992  0.0000  Double_FF_FIFO_DEPTH8_0
+ICG0                                 40.0078      0.2      0.0000    40.0078  0.0000  CLK_gate
+Pgen0                                31.7709      0.1      5.8835    25.8874  0.0000  Pulse_generator_0
+RF0                                5709.3484     26.3   2162.7747  3546.5738  0.0000  Register_File_WIDTH8_DEPTH16
+RST_SYNC0                            51.7748      0.2      0.0000    51.7748  0.0000  RST_SYNC_NUM_STAGES2_0
+RST_SYNC1                            51.7748      0.2      0.0000    51.7748  0.0000  RST_SYNC_NUM_STAGES2_1
+UART0                              3084.1307     14.2      0.0000     0.0000  0.0000  UART_TOP_DATA_WIDTH8
+UART0/RX0                          2221.6096     10.2      7.0602     0.0000  0.0000  UART_RX_DATA_WIDTH8
+UART0/RX0/C0                        569.5228      2.6    464.7965   104.7263  0.0000  FSM_CU_RX
+UART0/RX0/DATA_SAMPLE0              593.0568      2.7    488.3305   104.7263  0.0000  sampler_RX
+UART0/RX0/PAR_CHKER0                 62.3651      0.3     36.4777    25.8874  0.0000  Parity_check_RX
+UART0/RX0/S2P                       298.8818      1.4     91.7826   207.0992  0.0000  Serial_2_parallel_RX_DATA_WIDTH8
+UART0/RX0/STAR_CHECKER0              42.3612      0.2     16.4738    25.8874  0.0000  Start_check_RX
+UART0/RX0/STOP_CHECKER0              43.5379      0.2     17.6505    25.8874  0.0000  Stop_check_RX
+UART0/RX0/counter0                  604.8238      2.8    371.8372   232.9866  0.0000  edge_bit_counter_RX
+UART0/TX0                           862.5211      4.0     84.7224   207.0992  0.0000  UART_TX_DATA_WIDTH8
+UART0/TX0/FSM0                      157.6778      0.7     80.0156    77.6622  0.0000  FSM_TX
+UART0/TX0/M0                         34.1243      0.2     34.1243     0.0000  0.0000  MUX_TX
+UART0/TX0/P0                        124.7302      0.6     98.8428    25.8874  0.0000  Parity_gen_TX_WIDTH8
+UART0/TX0/P2S_0                     254.1672      1.2    124.7302   129.4370  0.0000  parallel_2_serial_TX_WIDTH8
+--------------------------------  ----------  -------  ----------  ---------  ------  ------------------------------------------------------------------------------------------------
+Total                                                  12441.2493  9259.4522  0.0000
+
+1

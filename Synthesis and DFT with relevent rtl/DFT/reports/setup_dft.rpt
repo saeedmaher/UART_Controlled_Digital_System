@@ -1,0 +1,164 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 20
+Design : SYS_TOP
+Version: O-2018.06-SP1
+Date   : Fri Oct  2 04:18:27 2026
+****************************************
+
+Operating Conditions: scmetro_tsmc_cl013g_rvt_ss_1p08v_125c   Library: scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+Wire Load Model Mode: top
+
+  Startpoint: UART0/TX0/FSM0/cs_reg[2]
+              (rising edge-triggered flip-flop)
+  Endpoint: UART_TX_OUT
+            (output port clocked by MASTER_UART_CLK)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  UART0/TX0/FSM0/cs_reg[2]/CK (SDFFRQX2M)                 0.00       0.00 r
+  UART0/TX0/FSM0/cs_reg[2]/Q (SDFFRQX2M)                  0.57       0.57 f
+  UART0/TX0/FSM0/U10/Y (NOR2X2M)                          0.27       0.84 r
+  UART0/TX0/FSM0/mux_sel[0] (FSM_TX_test_1)               0.00       0.84 r
+  UART0/TX0/M0/sel[0] (MUX_TX)                            0.00       0.84 r
+  UART0/TX0/M0/U2/Y (AOI22X1M)                            0.21       1.05 f
+  UART0/TX0/M0/U1/Y (OAI2B2X4M)                           0.71       1.76 r
+  UART0/TX0/M0/out (MUX_TX)                               0.00       1.76 r
+  UART0/TX0/tx_out (UART_TX_DATA_WIDTH8_test_1)           0.00       1.76 r
+  UART0/tx_out_s (UART_TOP_DATA_WIDTH8_test_1)            0.00       1.76 r
+  UART_TX_OUT (out)                                       0.00       1.76 r
+  data arrival time                                                  1.76
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: UART0/RX0/C0/cs_reg[1]
+              (rising edge-triggered flip-flop)
+  Endpoint: stop_error (output port clocked by MASTER_UART_CLK)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  UART0/RX0/C0/cs_reg[1]/CK (SDFFRQX2M)                   0.00       0.00 r
+  UART0/RX0/C0/cs_reg[1]/Q (SDFFRQX2M)                    0.57       0.57 f
+  UART0/RX0/C0/U33/Y (INVX2M)                             0.09       0.66 r
+  UART0/RX0/C0/U28/Y (NAND2X2M)                           0.13       0.79 f
+  UART0/RX0/C0/U9/Y (INVX2M)                              0.09       0.88 r
+  UART0/RX0/C0/U31/Y (AND2X2M)                            0.64       1.53 r
+  UART0/RX0/C0/stop_error (FSM_CU_RX_test_1)              0.00       1.53 r
+  UART0/RX0/stop_error (UART_RX_DATA_WIDTH8_test_1)       0.00       1.53 r
+  UART0/rx_stop_err (UART_TOP_DATA_WIDTH8_test_1)         0.00       1.53 r
+  stop_error (out)                                        0.00       1.53 r
+  data arrival time                                                  1.53
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: UART0/RX0/C0/cs_reg[1]
+              (rising edge-triggered flip-flop)
+  Endpoint: parity_error
+            (output port clocked by MASTER_UART_CLK)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  UART0/RX0/C0/cs_reg[1]/CK (SDFFRQX2M)                   0.00       0.00 r
+  UART0/RX0/C0/cs_reg[1]/Q (SDFFRQX2M)                    0.57       0.57 f
+  UART0/RX0/C0/U33/Y (INVX2M)                             0.09       0.66 r
+  UART0/RX0/C0/U28/Y (NAND2X2M)                           0.13       0.79 f
+  UART0/RX0/C0/U6/Y (NOR2X4M)                             0.64       1.43 r
+  UART0/RX0/C0/parity_error (FSM_CU_RX_test_1)            0.00       1.43 r
+  UART0/RX0/parity_error (UART_RX_DATA_WIDTH8_test_1)     0.00       1.43 r
+  UART0/rx_par_err (UART_TOP_DATA_WIDTH8_test_1)          0.00       1.43 r
+  parity_error (out)                                      0.00       1.43 r
+  data arrival time                                                  1.43
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: RF0/RdData_reg[7]
+              (rising edge-triggered flip-flop)
+  Endpoint: SO[2] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  RF0/RdData_reg[7]/CK (SDFFRQX1M)                        0.00       0.00 r
+  RF0/RdData_reg[7]/Q (SDFFRQX1M)                         0.54       0.54 r
+  RF0/U3/Y (CLKBUFX2M)                                    0.12       0.66 r
+  RF0/RdData[7] (Register_File_WIDTH8_DEPTH16_test_1)     0.00       0.66 r
+  U39/Y (BUFX2M)                                          0.61       1.26 r
+  SO[2] (out)                                             0.00       1.26 r
+  data arrival time                                                  1.26
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: FIFO0/MEM0/mem_reg[1][7]
+              (rising edge-triggered flip-flop)
+  Endpoint: SO[3] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  FIFO0/MEM0/mem_reg[1][7]/CK (SDFFRQX1M)                 0.00       0.00 r
+  FIFO0/MEM0/mem_reg[1][7]/Q (SDFFRQX1M)                  0.52       0.52 r
+  FIFO0/MEM0/U2/Y (INVXLM)                                0.07       0.58 f
+  FIFO0/MEM0/U3/Y (INVX2M)                                0.55       1.13 r
+  FIFO0/MEM0/test_so1 (FIFO_Mem_DATA_WIDTH8_FIFO_DEPTH8_test_1)
+                                                          0.00       1.13 r
+  FIFO0/test_so1 (FIFO_top_DATA_WIDTH8_FIFO_DEPTH8_test_1)
+                                                          0.00       1.13 r
+  SO[3] (out)                                             0.00       1.13 r
+  data arrival time                                                  1.13
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: RF0/reg_file_reg[10][7]
+              (rising edge-triggered flip-flop)
+  Endpoint: SO[1] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  RF0/reg_file_reg[10][7]/CK (SDFFRQX1M)                  0.00       0.00 r
+  RF0/reg_file_reg[10][7]/Q (SDFFRQX1M)                   0.52       0.52 r
+  RF0/U4/Y (INVXLM)                                       0.07       0.58 f
+  RF0/U5/Y (INVX2M)                                       0.55       1.13 r
+  RF0/test_so1 (Register_File_WIDTH8_DEPTH16_test_1)      0.00       1.13 r
+  SO[1] (out)                                             0.00       1.13 r
+  data arrival time                                                  1.13
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: UART0/TX0/P_data_reg_reg[7]
+              (rising edge-triggered flip-flop)
+  Endpoint: SO[0] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  UART0/TX0/P_data_reg_reg[7]/CK (SDFFRQX2M)              0.00       0.00 r
+  UART0/TX0/P_data_reg_reg[7]/Q (SDFFRQX2M)               1.01       1.01 r
+  UART0/TX0/test_so (UART_TX_DATA_WIDTH8_test_1)          0.00       1.01 r
+  UART0/test_so (UART_TOP_DATA_WIDTH8_test_1)             0.00       1.01 r
+  SO[0] (out)                                             0.00       1.01 r
+  data arrival time                                                  1.01
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+1
